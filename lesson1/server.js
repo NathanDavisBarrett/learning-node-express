@@ -5,18 +5,18 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-// app.post('/', (req, res) => {
-//   res.send('Here is the response to your POST, man!\n');
-// });
-//
-// app.put('/', (req, res) => {
-//   res.send('I am updated.\n');
-// });
-//
-// app.delete('/', (req, res) => {
-//   res.send('All my memories have been deleted. Are you happy now?\n');
-// });
-//
+app.post('/', (req, res) => {
+  res.send('Here is the response to your POST, man!\n');
+});
+
+app.put('/', (req, res) => {
+  res.send('I am updated.\n');
+});
+
+app.delete('/', (req, res) => {
+  res.send('All my memories have been deleted. Are you happy now?\n');
+});
+
 // app.get('/secret', (req, res) => {
 //   res.send('Psst. You are being watched.\n');
 // });
