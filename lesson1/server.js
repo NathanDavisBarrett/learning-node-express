@@ -27,6 +27,6 @@ app.get('/api/user/1', (req, res) => {
     avatar: "/avatars/supergirl.jpg",
     role: "admin"
   });
-});
+}); 
 
 app.listen(3000, () => console.log('Server listening on port 3000!'));
