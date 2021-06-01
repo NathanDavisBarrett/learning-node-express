@@ -40,10 +40,9 @@ export default {
         this.problem = "";
         this.creating = false;
         return true;
+      } catch (error) {
+        //console.log(error);
       }
-      // catch (error) {
-      //   console.log(error);
-      // }
 
     },
   }
