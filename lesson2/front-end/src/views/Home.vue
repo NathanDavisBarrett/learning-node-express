@@ -32,18 +32,20 @@ export default {
         let response = await axios.get("/api/tickets");
         this.tickets = response.data;
         return true;
-      } catch (error) {
-        console.log(error);
       }
+      // catch (error) {
+      //   console.log(error);
+      // }
     },
     async deleteTicket(ticket) {
       try {
         await axios.delete("/api/tickets/" + ticket.id);
         this.getTickets();
         return true;
-      } catch (error) {
-        console.log(error);
       }
+      // catch (error) {
+      //   console.log(error);
+      // }
     }
   }
 }
